@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    build:
+        context: ./dockerbuild/app/
+    volumes:
+      - ./src:/work
+    working_dir: /work
+    command: ["uvicorn", "--host", "0.0.0.0", "--port", "5000", "main:app", "--reload"]
+    ports:
+      - 5000:5000
