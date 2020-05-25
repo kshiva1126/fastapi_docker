@@ -4,7 +4,7 @@ Startup
 
 ```
 $ git clone https://github.com/kshiva1126/fastapi_docker.git ; cd fastapi_docker
-$ docker-compose up -d
+$ docker-compose build ; docker-compose up -d
 ```
 
 Open your browser at  
